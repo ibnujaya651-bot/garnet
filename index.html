@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Siapa Yang Dia Suka? — Quiz Pasangan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>💭 Siapa yang Dia Suka? — Quiz Pasangan</h1>
+    <p class="subtitle">Sebaiknya minta dia isi sendiri (Invite). Atau isi mode Self untuk tahu preferensimu.</p>
+
+    <div id="mode-select" class="card">
+      <button id="btn-self">Isi untuk Diri Sendiri</button>
+      <button id="btn-invite">Buat Link Invite (suruh dia isi)</button>
+    </div>
+
+    <div id="quiz-card" class="card hidden">
+      <div id="progress">Soal <span id="qnum">1</span> / <span id="qtotal">8</span></div>
+      <div id="question-area">
+        <h2 id="qtext"></h2>
+        <div id="options"></div>
+      </div>
+
+      <div class="controls">
+        <button id="btn-prev">⬅ Sebelumnya</button>
+        <button id="btn-next">Selanjutnya ➡</button>
+      </div>
+    </div>
+
+    <div id="result-card" class="card hidden">
+      <h2>Hasil & Rekomendasi</h2>
+      <div id="result-summary"></div>
+      <div id="result-suggestion"></div>
+
+      <div class="actions">
+        <button id="btn-save">Simpan Lokal</button>
+        <button id="btn-copy">Salin Hasil</button>
+        <button id="btn-new">Mulai Lagi</button>
+      </div>
+      <p class="note">Catatan privasi: data disimpan hanya di browser (localStorage). Untuk tahu orang lain, minta mereka isi sendiri lewat link invite.</p>
+    </div>
+
+    <div id="invite-card" class="card hidden">
+      <h3>Buat Link Invite</h3>
+      <p>Kirim link ini ke dia. Setelah dia isi, hasil akan tersimpan di browser dia (privasi terjaga).</p>
+      <button id="btn-generate">Generate Link Invite</button>
+      <div id="invite-url" class="invite-url"></div>
+      <small>Atau salin & kirim via chat. Jangan paksa ya — minta dengan sopan 😉</small>
+    </div>
+
+    <footer>
+      <small>Made with care • Jangan gunakan untuk melanggar privasi orang lain</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+                                </html>
